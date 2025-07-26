@@ -1,8 +1,19 @@
 [tool.poetry]
-name = "multi-agentic-ai-system-framework"
+name = "Sahayak"  # Changed to match directory (lowercase recommended)
 version = "0.1.0"
-description = "A framework for multi-agentic AI systems."
+description = "Speech-to-text functionality using Google Cloud"
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+google-cloud-speech = "^2.21.0"
+google-cloud-translate = "^2.0.1"
+pyaudio = "^0.2.13"
+
+# Correct packages section
+[[tool.poetry.packages]]
+include = "sahayak"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
